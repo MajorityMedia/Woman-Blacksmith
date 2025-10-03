@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Writer's Forge</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body { 
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+      margin: 0; 
+      padding: 0; 
+      background-color: #000;
+      color: #fff;
+      min-height: 100vh;
+    }
+    
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    
+    .hero-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('https://raw.githubusercontent.com/MajorityMedia/blacksmith-face/main/Woman%20Blacksmith.png');
+      background-size: cover;
+      background-position: center 40%;
+      filter: brightness(0.65);
+      z-index: 1;
+    }
+    
+    @media (max-width: 768px) {
+      .hero-bg {
+        background-position: center 30%;
+      }
+    }
+    
+    .content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding: 40px 20px;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    
+    h1 { 
+      font-size: 2.5em;
+      margin-bottom: 30px;
+      color: #fff;
+      line-height: 1.2;
+      font-weight: 900;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+    }
+    
+    .subhead {
+      font-size: 1.3em;
+      margin-bottom: 35px;
+      color: #fff;
+      line-height: 1.6;
+      text-shadow: 1px 1px 6px rgba(0,0,0,0.9);
+    }
+    
+    .description {
+      font-size: 1.1em;
+      margin-bottom: 35px;
+      color: #f0f0f0;
+      line-height: 1.7;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+    }
+    
+    .credits {
+      color: #ff6b35;
+      font-weight: 600;
+      font-style: normal;
+    }
+    
+    .cta-section {
+      margin-top: 40px;
+    }
+    
+    .free-text {
+      font-size: 1.2em;
+      font-weight: 700;
+      margin-bottom: 25px;
+      color: #fff;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+    }
+    
+    .cta-btn { 
+      background: linear-gradient(135deg, #ff6b35, #e63946);
+      color: #fff;
+      padding: 18px 40px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.2em;
+      border-radius: 8px;
+      display: inline-block;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 4px 20px rgba(255, 107, 53, 0.4);
+      text-shadow: none;
+    }
+    
+    .cta-btn:hover { 
+      transform: translateY(-2px);
+      box-shadow: 0 6px 25px rgba(255, 107, 53, 0.6);
+    }
+    
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.8em;
+      }
+      
+      .subhead {
+        font-size: 1.1em;
+      }
+      
+      .description {
+        font-size: 1em;
+      }
+      
+      .cta-btn {
+        padding: 16px 32px;
+        font-size: 1.1em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <div class="hero-bg"></div>
+    <div class="content">
+      <h1>Every writer battles self-doubt.<br>Most lose.</h1>
+      
+      <div class="subhead">
+        If you're stuck second-guessing every line, abandoning drafts at page 30, or terrified your script will never be good enough—
+      </div>
+      
+      <div class="description">
+        <strong>You're not broken. You're a writer.</strong>
+      </div>
+      
+      <div class="description">
+        At <strong>The Forge</strong>, you'll get mentorship from <span class="credits">J. David Stem (Shrek 2, Rugrats, Jimmy Neutron)</span> and a community that pushes you past the critic in your head.
+      </div>
+      
+      <div class="cta-section">
+        <div class="free-text">It's free right now. Founding members only.</div>
+        <a href="https://www.skool.com/the-writers-forge/about" class="cta-btn">Join The Forge Today →</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
